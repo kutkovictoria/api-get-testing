@@ -32,7 +32,7 @@ public class ApiTest {
         request = new HttpGet(BASE_URL);
         response = client.execute(request);
         String responseBody = EntityUtils.toString(response.getEntity());
-        Assertions.assertTrue(responseBody.contains("{\"name\":\"Flat  5x7  Card\"}"));
+        Assertions.assertTrue(responseBody.contains("\"name\":\"Full Bleed Flat 5x7\""));
     }
     @AfterEach
     public void afterMethod() throws IOException {
